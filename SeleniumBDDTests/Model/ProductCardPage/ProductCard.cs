@@ -10,7 +10,7 @@ namespace SeleniumBDDTests.Model.ProductCardPage
     {
         [ClassName("header_user_info")] public Button Account;
         [Id("wishlist_button")] public Button AddToWishList;
-        [XPath("//div[@class = 'fancybox-overlay fancybox-overlay-fixed']/div")] public Message AddedToYourWishlist;
+        [XPath("//div[@class = 'fancybox-overlay fancybox-overlay-fixed']")] public Message AddedToYourWishlist;
 
         public ProductCard(BaseDriver driver) : base(driver)
         {
